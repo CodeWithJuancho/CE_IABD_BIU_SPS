@@ -20,7 +20,6 @@ class User:
         return f"User({self.name} {self.surname}, {self.email})"
 
 
-
 def database_init_connection():
     """
     Establece una conexión con la base de datos PostgreSQL que corre en Docker.
