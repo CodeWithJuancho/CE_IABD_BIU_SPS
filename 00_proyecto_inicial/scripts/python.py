@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import polars as pl
-
+import datetime
 
 fechaact = datetime.datetime.now()
 fechaform = fechaact.strftime("%m_%d_%y")
