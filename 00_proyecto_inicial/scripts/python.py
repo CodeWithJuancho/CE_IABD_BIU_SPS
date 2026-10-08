@@ -17,6 +17,10 @@ class User:
     @staticmethod
     def check_row(row): # return True is the row is ok, or False otherwise
         return  not pandas.isna(row.name) and row.surname and not pandas.isna(row.email) and not pandas.isna(row.genre) and not pandas.isna(row.birth) and not pandas.isna(row.phone) and not pandas.isna(row.country) and not pandas.isna(row.city) and not pandas.isna(row.state)
+
+    @staticmethod
+    def from_row(row):
+        return User(row.name, row.surname, row.email, row.genre, row.birth, row.phone, row.country, row.city, row.state) if not User.check_row(row) else None
         
 def database_init_connection():
     pass # TODO
@@ -29,14 +33,14 @@ date = datetime.now().strftime("%m_%d_%y")
 users_file_path = "../users/extracted/users.csv"
 logs_folder_path = "./logs"
 
-imported_rows = list()
 rejected_rows = list()
+users = list()
 
 if Path(users_file_path).exists():
     users_file = pandas.read_csv(users_file_path)
     for row in users_file.itertuples(index=False):
         if User.check_row(row):
-            imported_rows.append(tuple(row))
+            users.append(User.from_row(row))
         else:
             rejected_rows.append(tuple(row))
         # print(f"{row.id} {User.check_row(row)}")
@@ -50,5 +54,5 @@ if Path(users_file_path).exists():
     imported_logs_file_path = logs_folder_path + "/" + date + "_imported_rows.txt"
         
     with open(imported_logs_file_path, "w") as imported_logs:
-        imported_logs.write(f"There were {len(imported_rows)} imported rows.\n")
+        imported_logs.write(f"There were {len(users)} imported rows.\n")
         
