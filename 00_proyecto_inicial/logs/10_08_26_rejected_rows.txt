@@ -1,0 +1,9 @@
+There were 7 rejected rows
+Rejected Users:
+Name: +34 612 345 678, Surname: España, Email: Madrid, Genre: Madrid, Birth: nan, Phone: nan, Country: nan, City: nan, State: nan
+Name: Samuel, Surname: Morales, Email: samuel.morales@example.com, Genre: Masculino, Birth: 1989-11-17, Phone: +54 261 123 4567, Country: ArgentinaMendoza, City: nan, State: nan
+Name: Lucía, Surname: Vázquez, Email: lucia.vazquez@example.com, Genre: Femenino, Birth: 2000-04-03, Phone: Chile, Country: Concepción, City: Bío Bío, State: nan
+Name: Valeria, Surname: Romero, Email: Femenino, Genre: 1997-01-21, Birth: +34 611 223 344, Phone: España, Country: Valencia, City: Valencia, State: nan
+Name: Benjamin, Surname: benjamin.alvarez@example.com, Email: Masculino, Genre: 1991-01-15, Birth: +57 318 123 4567, Phone: Colombia, Country: Cartagena, City: Bolívar, State: nan
+Name: Natalia, Surname: Ramos, Email: 1998-10-15, Genre: +52 222 123 4567, Birth: México, Phone: Puebla, Country: Puebla, City: nan, State: nan
+Name: Leonardo, Surname: Flores, Email: leonardo.flores@example.com, Genre: 1995-12-01, Birth: +52 744 123 4567, Phone: México, Country: Acapulco, City: Guerrero, State: nan
