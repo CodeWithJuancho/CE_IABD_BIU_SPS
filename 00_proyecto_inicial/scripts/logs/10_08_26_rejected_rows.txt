@@ -1,0 +1,8 @@
+There were 7 rejected rows.
+{'id': 1, 'name': '+34 612 345 678', 'surname': 'España', 'email': 'Madrid', 'genre': 'Madrid', 'birth': '', 'phone': '', 'country': '', 'city': '', 'state': ''}
+{'id': 13, 'name': 'Samuel', 'surname': 'Morales', 'email': 'samuel.morales@example.com', 'genre': 'Masculino', 'birth': '1989-11-17', 'phone': '+54 261 123 4567', 'country': 'ArgentinaMendoza', 'city': '', 'state': ''}
+{'id': 14, 'name': 'Lucía', 'surname': 'Vázquez', 'email': 'lucia.vazquez@example.com', 'genre': 'Femenino', 'birth': '2000-04-03', 'phone': 'Chile', 'country': 'Concepción', 'city': 'Bío Bío', 'state': ''}
+{'id': 16, 'name': 'Valeria', 'surname': 'Romero', 'email': 'Femenino', 'genre': '1997-01-21', 'birth': '+34 611 223 344', 'phone': 'España', 'country': 'Valencia', 'city': 'Valencia', 'state': ''}
+{'id': 25, 'name': 'Benjamin', 'surname': 'benjamin.alvarez@example.com', 'email': 'Masculino', 'genre': '1991-01-15', 'birth': '+57 318 123 4567', 'phone': 'Colombia', 'country': 'Cartagena', 'city': 'Bolívar', 'state': ''}
+{'id': 32, 'name': 'Natalia', 'surname': 'Ramos', 'email': '1998-10-15', 'genre': '+52 222 123 4567', 'birth': 'México', 'phone': 'Puebla', 'country': 'Puebla', 'city': '', 'state': ''}
+{'id': 37, 'name': 'Leonardo', 'surname': 'Flores', 'email': 'leonardo.flores@example.com', 'genre': '1995-12-01', 'birth': '+52 744 123 4567', 'phone': 'México', 'country': 'Acapulco', 'city': 'Guerrero', 'state': ''}
