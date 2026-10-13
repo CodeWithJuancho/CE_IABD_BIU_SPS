@@ -1,16 +1,13 @@
 #!/bin/bash
 
-#content=$(cat ../users/extracted/users.csv)
-#Extraer las fechas del archivo users.csv y mostrarlas en pantalla
-#dates=$(awk -F',' '{print $6}' ../users/extracted/users.csv)
-#echo "Fechas extraídas del archivo users.csv:"
-#echo "$dates"
+# Obtener la fecha actual con formato mes_dia_año
+fecha_hoy=$(date +%m_%d_%Y)
 
-fecha=$(awk 'BEGIN {FS=0FS=","} {
-    split($2, a, "-");
-    $2 = sprintf("%s/%s/%s", a[3], a[2], a[1])
-} 1' ../users/extracted/users.csv > ../users/extracted/users_formatted.csv)
+# Mostrar esa fecha por pantalla
+echo "Fecha de hoy: $fecha_hoy"
 
-content=$(cat ../users/extracted/users_formatted.csv)
-echo "Contenido del archivo users_formatted.csv:"
-echo "$content"
+#copiar ../users/exracted/users.csv en la carpeta ../users/processed y la copia debe llamarse fecha_hoy_processed_users.txt
+cp ../users/extracted/users.csv ../users/processed/"${fecha_hoy}_processed_users.txt"
+
+# Ejecutar el script Python python.py
+: 'python3 python.py'
