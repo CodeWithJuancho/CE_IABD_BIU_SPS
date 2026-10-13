@@ -25,34 +25,61 @@ class User:
         
 def database_init_connection():
     try:
-        # Establecer la conexión
         connection = psycopg2.connect(
             host="localhost",
-            database="proyecto0",
+            database="postgres",
             user="postgres",
             password="1234",
             port=5432  # Puerto predeterminado de PostgreSQL
         )
 
-        # Crear un cursor para ejecutar consultas
+        # Create users table if it doesn't exist
         cursor = connection.cursor()
-        cursor.execute("SELECT version();")
-        db_version = cursor.fetchone()
-        print("Conectado a PostgreSQL. Versión:", db_version)
 
-        # Cerrar cursor
-        cursor.close()
+        table_users_exists = """
+        SELECT EXISTS (
+            SELECT 1 
+            FROM information_schema.tables 
+            WHERE table_schema = 'public' 
+            AND table_name = 'users'
+        );
+        """
+
+        cursor.execute(table_users_exists)
+        exists = cursor.fetchone()[0] # Boolean field
+
+        print(f"LO DE LA TABLA ES: {exists}")
+        if not exists:
+            create_table_users = """
+            CREATE TABLE users(
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(50) NOT NULL,
+                surname VARCHAR(50) NOT NULL,
+                email VARCHAR(255) NOT NULL,
+                genre VARCHAR(20),
+                birth DATE,
+                phone VARCHAR(20),
+                country VARCHAR(50),
+                city VARCHAR(50),
+                state VARCHAR(50)
+            );
+            """
+            cursor.execute(create_table_users)
+
+        return connection
 
     except Exception as error:
-        print("Error al conectar a la base de datos:", error)
-
-    finally:
-        # Asegurarse de cerrar la conexión
-        if connection:
-            connection.close()
+        print("Can't connect database: ", error)
 
 def database_insertion_query(db_connection, users):
-    pass # TODO
+    insert_users =f"""
+    INSERT INTO users (name, surname, email, genre, birth, phone, country, city, state)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    """
+    #insert_users += ",\n ".join(f"    ('{user.name}', '{user.surname}', '{user.email}', '{user.genre}', {user.birth}, '{user.phone}', '{user.country}', '{user.city}', '{user.state}')" for user in users)
+    cursor = db_connection.cursor()
+    users_tuples = [(user.name, user.surname, user.email, user.genre, user.birth, user.phone, user.country, user.city, user.state) for user in users]
+    cursor.executemany(insert_users, users_tuples)
 
 date = datetime.now().strftime("%m_%d_%y")
 
@@ -77,8 +104,14 @@ if Path(users_file_path).exists():
         rejected_logs.write(f"There were {len(rejected_rows)} rejeted rows.\n")
         rejected_logs.writelines(f"{row}\n" for row in rejected_rows)
 
-    imported_logs_file_path = logs_folder_path + "/" + date + "_imported_rows.txt"
+    imported_users = 0
+    db_connection = database_init_connection();
+    if (db_connection):
+        database_insertion_query(db_connection, users)
+        imported_users = len(users)
         
+    imported_logs_file_path = logs_folder_path + "/" + date + "_imported_rows.txt"
     with open(imported_logs_file_path, "w") as imported_logs:
-        imported_logs.write(f"There were {len(users)} imported rows.\n")
+        imported_logs.write(f"There were {imported_users} imported rows.\n")
+
         

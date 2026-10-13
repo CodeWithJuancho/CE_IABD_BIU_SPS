@@ -5,7 +5,7 @@ Process Users File
 ## Python Script Dependencies
 ```
 sudo apt-get install python3-pandas python3-psycopg2
-```S
+```
 
 ## PostgreSQL Database with docker
 
@@ -53,6 +53,12 @@ sudo docker run hello-world
 sudo docker run -d -p 5432:5432 --name proyecto0 -e POSTGRES_PASSWORD=1234 postgres
 ```
 
+4. Access to the db
+```
+sudo docker exec -it proyecto0 bash
+psql -U postgres -d postgres
+```
+
 ### SQL query
 ```
 CREATE TABLE users(
@@ -68,3 +74,6 @@ CREATE TABLE users(
     state VARCHAR(50)
 );
 ```
+
+5. Stop container
+```docker stop proyecto0``
