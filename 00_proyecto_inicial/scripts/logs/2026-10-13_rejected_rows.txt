@@ -1,0 +1,12 @@
+logs/2026-10-13_rejected_rows.txt
+There were 7 imported rows.
+    id             name  ...      city state
+0    1  +34 612 345 678  ...       NaN   NaN
+12  13           Samuel  ...       NaN   NaN
+13  14            Lucía  ...   Bío Bío   NaN
+15  16          Valeria  ...  Valencia   NaN
+24  25         Benjamin  ...   Bolívar   NaN
+31  32          Natalia  ...       NaN   NaN
+36  37         Leonardo  ...  Guerrero   NaN
+
+[7 rows x 10 columns]
