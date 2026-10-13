@@ -25,12 +25,42 @@ with open("users/extracted/users.csv") as archivo:
     #lee el archivo y lo mete en datos
     datos = csv.reader(archivo)
     
+    #salto la primera fila porque solo tiene los nombres de las columnas
+    cabecera = next(datos)
+    
     for fila in datos:
         if len(fila) != 10:
             rechazadas.append(fila)
         else:
-            for campo in fila:
-                if campo == "":
-                    print("CAMPO VACIO")
+            #creo el objeto a partir de los datos de la fila
+            usuario = Usuario(*fila)
             
-print(rechazadas)
+            #compruebo los atributos del objeto
+            if (
+                   not usuario.id.strip()
+                or not usuario.name.strip()
+                or not usuario.surname.strip()
+                or not usuario.email.strip()
+                or not usuario.genre.strip()
+                or not usuario.birth.strip()
+                or not usuario.phone.strip()
+                or not usuario.country.strip()
+                or not usuario.city.strip()
+                or not usuario.state.strip()
+            ):
+                rechazadas.append(fila)
+                
+            else:
+                aceptadas.append(usuario)
+
+#archivo rechazadas
+with open (f"scripts/logs/{fecha}_rejected_rows.txt", "w") as archivo:
+    archivo.write(f"There were {len(rechazadas)} rejected rows.\n")
+    for fila in rechazadas:
+        archivo.write(", ".join(fila) + "\n")
+
+#archivo aceptadas        
+with open (f"scripts/logs/{fecha}_imported_rows.txt", "w") as archivo:
+    archivo.write(f"There were {len(aceptadas)} imported rows.\n")
+    for usuario in aceptadas:
+        archivo.write(f"{usuario.id}, {usuario.name}, {usuario.surname}, {usuario.email}, {usuario.genre}, {usuario.birth}, {usuario.phone}, {usuario.country}, {usuario.city}, {usuario.state}\n")
