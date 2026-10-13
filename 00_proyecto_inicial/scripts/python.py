@@ -63,6 +63,8 @@ def database_insertion_query(db_connection, users):
     """
     cursor.execute(create_table_query)
 
+    cursor.execute("TRUNCATE TABLE users RESTART IDENTITY;")
+
     insert_query = """
     INSERT INTO users (name, surname, email, genre, birth, phone, country, city, state)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
@@ -83,15 +85,27 @@ def database_insertion_query(db_connection, users):
 
     db_connection.commit()
 
-    cursor.close()
+    cursor.execute("SELECT id, name, surname, email, phone, country, city FROM users ORDER BY id;")
+    rows = cursor.fetchall()
 
+    print("\n" + "=" * 112)
+    print(f"| {'ID':<4} | {'NOMBRE':<12} | {'APELLIDOS':<15} | {'EMAIL':<30} | {'TELÉFONO':<18} | {'PAÍS':<14} |")
+    print("=" * 112)
+    for r in rows:
+        print(f"| {r[0]:<4} | {r[1]:<12} | {r[2]:<15} | {r[3]:<30} | {r[4]:<18} | {r[5]:<14} |")
+    print("=" * 112)
+    print(f"Total de registros correctos en la tabla 'users': {len(rows)}\n")
+
+    cursor.close()
     db_connection.close()
     print(f"Se han insertado {len(users)} usuarios en la base de datos con éxito.")
 
 
 def main():
     current_date = datetime.now().strftime("%m_%d_%y")
-    csv_file_path = "../users/extracted/users.csv"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_dir = os.path.dirname(script_dir)
+    csv_file_path = os.path.normpath(os.path.join(script_dir, "../users/extracted/users.csv"))
 
     rejected_rows = []
     imported_rows = []
@@ -125,7 +139,10 @@ def main():
                 )
                 users.append(user)
 
-    log_directories = ["logs", "../logs"]
+    log_directories = [
+        os.path.join(script_dir, "logs"),
+        os.path.join(project_dir, "logs")
+    ]
     for log_dir in log_directories:
         os.makedirs(log_dir, exist_ok=True)
 
