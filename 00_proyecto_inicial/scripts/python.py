@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 import pandas
+import psycopg2
 
 class User:
     def __init__(self, name, surname, email, genre, birth, phone, country, city, state):
@@ -20,10 +21,35 @@ class User:
 
     @staticmethod
     def from_row(row):
-        return User(row.name, row.surname, row.email, row.genre, row.birth, row.phone, row.country, row.city, row.state) if not User.check_row(row) else None
+        return User(row.name, row.surname, row.email, row.genre, row.birth, row.phone, row.country, row.city, row.state) if User.check_row(row) else None
         
 def database_init_connection():
-    pass # TODO
+    try:
+        # Establecer la conexión
+        connection = psycopg2.connect(
+            host="localhost",
+            database="proyecto0",
+            user="postgres",
+            password="1234",
+            port=5432  # Puerto predeterminado de PostgreSQL
+        )
+
+        # Crear un cursor para ejecutar consultas
+        cursor = connection.cursor()
+        cursor.execute("SELECT version();")
+        db_version = cursor.fetchone()
+        print("Conectado a PostgreSQL. Versión:", db_version)
+
+        # Cerrar cursor
+        cursor.close()
+
+    except Exception as error:
+        print("Error al conectar a la base de datos:", error)
+
+    finally:
+        # Asegurarse de cerrar la conexión
+        if connection:
+            connection.close()
 
 def database_insertion_query(db_connection, users):
     pass # TODO
@@ -39,11 +65,11 @@ users = list()
 if Path(users_file_path).exists():
     users_file = pandas.read_csv(users_file_path)
     for row in users_file.itertuples(index=False):
-        if User.check_row(row):
-            users.append(User.from_row(row))
+        user = User.from_row(row)
+        if user:
+            users.append(user)
         else:
             rejected_rows.append(tuple(row))
-        # print(f"{row.id} {User.check_row(row)}")
     
     rejected_logs_file_path = logs_folder_path + "/" + date + "_rejected_rows.txt"
     
