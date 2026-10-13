@@ -1,12 +1,12 @@
 import csv
+import psycopg2
 from datetime import datetime
 
 fecha = datetime.now().strftime("%m_%d_%y")
 print(fecha)
 
-class Usuario:
-    def __init__(self, id, name, surname, email, genre, birth, phone, country, city, state):
-        self.id = id
+class User:
+    def __init__(self, name, surname, email, genre, birth, phone, country, city, state):
         self.name = name
         self.surname = surname
         self.email = email
@@ -19,6 +19,7 @@ class Usuario:
 
 aceptadas = []
 rechazadas = []
+users = []
 
 #abre csv y lo mete en la variable archivo
 with open("users/extracted/users.csv") as archivo:
@@ -33,12 +34,11 @@ with open("users/extracted/users.csv") as archivo:
             rechazadas.append(fila)
         else:
             #creo el objeto a partir de los datos de la fila
-            usuario = Usuario(*fila)
+            usuario = User(*fila[1:])
             
             #compruebo los atributos del objeto
             if (
-                   not usuario.id.strip()
-                or not usuario.name.strip()
+                   not usuario.name.strip()
                 or not usuario.surname.strip()
                 or not usuario.email.strip()
                 or not usuario.genre.strip()
@@ -52,6 +52,7 @@ with open("users/extracted/users.csv") as archivo:
                 
             else:
                 aceptadas.append(usuario)
+                users.append(usuario)
 
 #archivo rechazadas
 with open (f"scripts/logs/{fecha}_rejected_rows.txt", "w") as archivo:
@@ -63,4 +64,5 @@ with open (f"scripts/logs/{fecha}_rejected_rows.txt", "w") as archivo:
 with open (f"scripts/logs/{fecha}_imported_rows.txt", "w") as archivo:
     archivo.write(f"There were {len(aceptadas)} imported rows.\n")
     for usuario in aceptadas:
-        archivo.write(f"{usuario.id}, {usuario.name}, {usuario.surname}, {usuario.email}, {usuario.genre}, {usuario.birth}, {usuario.phone}, {usuario.country}, {usuario.city}, {usuario.state}\n")
+        archivo.write(f"{usuario.name}, {usuario.surname}, {usuario.email}, {usuario.genre}, {usuario.birth}, {usuario.phone}, {usuario.country}, {usuario.city}, {usuario.state}\n")
+        
