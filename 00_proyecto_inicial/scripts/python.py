@@ -1,7 +1,10 @@
-import pandas as pd
-import datetime
+# 1. Importamos las librerías necesarias
 import os
+import datetime
+import pandas as pd
 import psycopg2
+
+# 2. Creamos la clase User para representar a cada usuario
 class User:
     def __init__(self, name, surname, email, genre, birth, phone, country, city, state):
         self.name = name
@@ -15,54 +18,38 @@ class User:
         self.state = state
 
 
-# FECHA EN FORMATO MM_DD_YY
+# 3. Configuramos rutas y fecha
 fecha_formateada = datetime.datetime.now().strftime("%m_%d_%y")
-
-# Cambiar al directorio del script actual
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# Cargar el CSV en un DataFrame de pandas
-df = pd.read_csv("../users/extracted/users.csv", encoding="utf-8")
+csv_path = "../users/extracted/users.csv"
+carpeta_logs = "../logs"
 
+# 4. Cargamos el CSV y procesamos los registros
+df = pd.read_csv(csv_path, encoding="utf-8")
+
+# 5. Creamos listas para almacenar los usuarios rechazados e importados
 lista_rechazada = []
 lista_importada = []
 users = []
 
 for _, fila in df.iterrows():
+    usuario = User(
+        fila["name"], fila["surname"], fila["email"], 
+        fila["genre"], fila["birth"], fila["phone"], 
+        fila["country"], fila["city"], fila["state"]
+    )
     if fila.isnull().any():
-        # Creamos una instancia de tu clase User
-        usuario_incompleto = User(
-            fila["name"], fila["surname"], fila["email"], 
-            fila["genre"], fila["birth"], fila["phone"], 
-            fila["country"], fila["city"], fila["state"]
-        )
-        # Añadimos el objeto a la lista
-        lista_rechazada.append(usuario_incompleto)
-#
+        lista_rechazada.append(usuario)
     else:
-        # Creamos una instancia de tu clase User
-        usuario_completo = User(
-            fila["name"], fila["surname"], fila["email"], 
-            fila["genre"], fila["birth"], fila["phone"], 
-            fila["country"], fila["city"], fila["state"]
-        )
-        # Añadimos el objeto a la lista
-        lista_importada.append(usuario_completo)
-        users.append(usuario_completo)
-        print(f"Usuario importado: {usuario_completo.name} {usuario_completo.surname}")
+        lista_importada.append(usuario)
+        users.append(usuario)
+        print(f"Usuario importado: {usuario.name} {usuario.surname}")
 
 print(f"Total de objetos User rechazados: {len(lista_rechazada)}")
 print(f"Total de objetos User importados: {len(lista_importada)}")
 
-
-
-# 1. Definir la ruta de la carpeta de logs
-carpeta_logs = "../logs"
-
-# 2. Crear la carpeta si no existe (exist_ok=True evita errores si ya existía)
-os.makedirs(carpeta_logs, exist_ok=True)
-
-# 3. Ahora ya puedes escribir tus archivos de forma segura
+# 6. Generamos los archivos de Log
 with open(f"{carpeta_logs}/{fecha_formateada}_rejected_rows.txt", "w", encoding="utf-8") as f:
     f.write(f"There were {len(lista_rechazada)} rejected rows\n")
     f.write("Rejected Users:\n")
@@ -75,25 +62,63 @@ with open(f"{carpeta_logs}/{fecha_formateada}_imported_rows.txt", "w", encoding=
     f.write(f"There were {len(lista_importada)} imported rows\n")
 
 
-def database_inertion_query(db_conection, users):
-    if db_conection is None:
-        print("No hay conexión activa.")
+# 7. Creamos la función de conexión a la base de datos
+def database_init_connection():
+    """
+    Establece y retorna una conexión con la base de datos PostgreSQL
+    utilizando variables de entorno o valores por defecto.
+    """
+    try:
+        # 8. Declaramos las variables que hemos utilizado para levantar el contenedor de PostgreSQL para conectarnos a la base de datos
+        connection = psycopg2.connect(
+            host=os.getenv("DB_HOST", "localhost"),
+            port=os.getenv("DB_PORT", "5432"),
+            dbname=os.getenv("DB_NAME", "postgres"),
+            user=os.getenv("DB_USER", "postgres"),
+            password=os.getenv("DB_PASSWORD", "1234")
+        )
+        print("¡Conexión exitosa a la base de datos PostgreSQL!")
+        return connection
+    except Exception as error:
+        print(f"Error al conectar con la base de datos: {error}")
+        return None
+
+
+# 9. Creamos la función de inserción en la base de datos
+def database_insertion_query(db_connection, users):
+    if db_connection is None:
+        print("No hay conexión activa con la base de datos.")
         return
         
     try:
-        cursor = db_conection.cursor() #
-        for user in users: #
-            insert_query = """
-                INSERT INTO users (name, surname, email, genre, birth, phone, country, city, state)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """ #
-            cursor.execute(insert_query, (user.name, user.surname, user.email,
-                                          user.genre, user.birth, user.phone,
-                                          user.country, user.city, user.state)) #
-        db_conection.commit() #
-        print(f"{len(users)} usuarios insertados con éxito.")
+        # 10.Declaramos el cursor y la query de inserción
+        cursor = db_connection.cursor()
+
+        # 11. Creamos la query de inserción para la tabla users
+        insert_query = """
+            INSERT INTO users (name, surname, email, genre, birth, phone, country, city, state)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """
+        #12. Iteramos sobre la lista de usuarios y ejecutamos la query de inserción para cada uno
+        for user in users:
+            cursor.execute(insert_query, (
+                user.name, user.surname, user.email,
+                user.genre, user.birth, user.phone,
+                user.country, user.city, user.state
+            ))
+        db_connection.commit()
+        print(f"{len(users)} usuarios insertados con éxito en PostgreSQL.")
     except Exception as e:
         print(f"Error al insertar usuarios en la base de datos: {e}")
+        db_connection.rollback()
     finally:
-        cursor.close() #
-        db_conection.close()  # <-- FALTA: Cerrar la conexión como pide el PDF
+        cursor.close()
+        db_connection.close()
+        print("Conexión a la base de datos cerrada.")
+
+
+# 13. Ejecutamos la función de conexión y la función de inserción
+if __name__ == "__main__":
+    conn = database_init_connection()
+    if conn:
+        database_insertion_query(conn, users)
