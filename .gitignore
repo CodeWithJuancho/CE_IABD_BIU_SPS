@@ -1,5 +1,6 @@
 # Gitignore files
 *.gh_token
+**/resolucion/
 
 
 
