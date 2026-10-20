@@ -1,5 +1,10 @@
 # Gitignore files
 *.gh_token
+<<<<<<< HEAD
 .vscode/
+=======
+**/resolucion/
+
+>>>>>>> 863fb9bdc28bfbeedac8681df733c09fbf9c6210
 
 
