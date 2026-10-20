@@ -1,6 +1,4 @@
 # Gitignore files
 *.gh_token
 **/resolucion/
-
-
-
+**/not_yet/

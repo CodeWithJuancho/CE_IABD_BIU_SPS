@@ -1,0 +1,421 @@
+﻿id_linea;fecha;hora;franja;categoria;producto;unidades;precio_unitario_eur;importe_eur
+V0001;2026-10-12;00:47:49;Madrugada;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0002;2026-10-12;00:57:53;Madrugada;Alimentación básica;Arroz 1 kg;3;1,90;5,70
+V0003;2026-10-12;01:29:36;Madrugada;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0004;2026-10-12;02:06:19;Madrugada;Bebidas;Agua 1 litro;2;1,00;2,00
+V0005;2026-10-12;04:06:28;Madrugada;Bebidas;Agua 1 litro;2;1,00;2,00
+V0006;2026-10-12;04:49:11;Madrugada;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0007;2026-10-12;07:13:15;Mañana;Alimentación básica;Pan de molde;1;1,80;1,80
+V0008;2026-10-12;07:22:14;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0009;2026-10-12;07:32:23;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0010;2026-10-12;07:48:43;Mañana;Alimentación básica;Pan de molde;2;1,80;3,60
+V0011;2026-10-12;08:30:39;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0012;2026-10-12;08:37:01;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0013;2026-10-12;09:03:35;Mañana;Hogar;Detergente 1 litro;1;6,90;6,90
+V0014;2026-10-12;09:08:45;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0015;2026-10-12;09:22:44;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0016;2026-10-12;09:25:00;Mañana;Hogar;Detergente 1 litro;1;6,90;6,90
+V0017;2026-10-12;10:26:33;Mañana;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0018;2026-10-12;10:31:13;Mañana;Bebidas;Agua 1 litro;3;1,00;3,00
+V0019;2026-10-12;10:53:51;Mañana;Hogar;Detergente 1 litro;1;6,90;6,90
+V0020;2026-10-12;11:22:45;Mañana;Hogar;Papel higiénico 4 rollos;2;3,50;7,00
+V0021;2026-10-12;11:29:56;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0022;2026-10-12;11:58:12;Mañana;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0023;2026-10-12;12:10:34;Tarde;Comida preparada;Sándwich preparado;3;2,90;8,70
+V0024;2026-10-12;12:19:28;Tarde;Hogar;Detergente 1 litro;3;6,90;20,70
+V0025;2026-10-12;12:19:30;Tarde;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0026;2026-10-12;12:53:18;Tarde;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0027;2026-10-12;13:17:22;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0028;2026-10-12;13:45:53;Tarde;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0029;2026-10-12;14:33:36;Tarde;Comida preparada;Pizza refrigerada;2;6,50;13,00
+V0030;2026-10-12;15:14:16;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0031;2026-10-12;15:20:02;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0032;2026-10-12;15:29:44;Tarde;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0033;2026-10-12;15:52:57;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0034;2026-10-12;15:59:18;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0035;2026-10-12;16:00:42;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0036;2026-10-12;16:41:10;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0037;2026-10-12;16:45:22;Tarde;Hogar;Detergente 1 litro;1;6,90;6,90
+V0038;2026-10-12;17:11:24;Tarde;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0039;2026-10-12;17:24:26;Tarde;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0040;2026-10-12;18:10:46;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0041;2026-10-12;18:22:50;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0042;2026-10-12;18:25:42;Noche;Bebidas;Agua 1 litro;1;1,00;1,00
+V0043;2026-10-12;18:50:23;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0044;2026-10-12;18:55:47;Noche;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0045;2026-10-12;19:03:30;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0046;2026-10-12;19:40:02;Noche;Comida preparada;Bocadillo preparado;3;3,50;10,50
+V0047;2026-10-12;20:22:07;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0048;2026-10-12;20:38:30;Noche;Bebidas;Agua 1 litro;1;1,00;1,00
+V0049;2026-10-12;20:59:14;Noche;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0050;2026-10-12;21:05:58;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0051;2026-10-12;21:08:38;Noche;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0052;2026-10-12;21:09:10;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0053;2026-10-12;21:34:40;Noche;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0054;2026-10-12;22:28:22;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0055;2026-10-12;23:13:50;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0056;2026-10-12;23:28:07;Noche;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0057;2026-10-12;23:42:51;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0058;2026-10-12;23:45:32;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0059;2026-10-12;23:47:07;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0060;2026-10-12;23:57:44;Noche;Bebidas;Agua 1 litro;1;1,00;1,00
+V0061;2026-10-13;02:29:09;Madrugada;Alimentación básica;Pan de molde;1;1,80;1,80
+V0062;2026-10-13;02:34:17;Madrugada;Bebidas;Agua 1 litro;4;1,00;4,00
+V0063;2026-10-13;04:44:47;Madrugada;Bebidas;Bebida energética 500 ml;3;2,50;7,50
+V0064;2026-10-13;05:17:40;Madrugada;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0065;2026-10-13;05:37:26;Madrugada;Bebidas;Agua 1 litro;3;1,00;3,00
+V0066;2026-10-13;05:46:18;Madrugada;Higiene personal;Pasta de dientes;1;2,80;2,80
+V0067;2026-10-13;06:14:01;Mañana;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0068;2026-10-13;06:23:46;Mañana;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0069;2026-10-13;06:40:05;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0070;2026-10-13;06:50:53;Mañana;Higiene personal;Gel de ducha 500 ml;3;3,80;11,40
+V0071;2026-10-13;06:52:29;Mañana;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0072;2026-10-13;06:57:38;Mañana;Bebidas;Refresco 330 ml;3;1,40;4,20
+V0073;2026-10-13;07:05:10;Mañana;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0074;2026-10-13;07:25:50;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0075;2026-10-13;07:28:29;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0076;2026-10-13;09:27:39;Mañana;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0077;2026-10-13;09:34:42;Mañana;Higiene personal;Pasta de dientes;1;2,80;2,80
+V0078;2026-10-13;09:35:58;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0079;2026-10-13;10:16:23;Mañana;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0080;2026-10-13;10:29:33;Mañana;Bebidas;Agua 1 litro;3;1,00;3,00
+V0081;2026-10-13;10:47:15;Mañana;Alimentación básica;Arroz 1 kg;3;1,90;5,70
+V0082;2026-10-13;11:50:44;Mañana;Comida preparada;Bocadillo preparado;3;3,50;10,50
+V0083;2026-10-13;12:10:04;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0084;2026-10-13;13:15:02;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0085;2026-10-13;13:16:06;Tarde;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0086;2026-10-13;13:29:14;Tarde;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0087;2026-10-13;13:42:17;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0088;2026-10-13;13:43:49;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0089;2026-10-13;14:14:03;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0090;2026-10-13;14:16:50;Tarde;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0091;2026-10-13;15:13:32;Tarde;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0092;2026-10-13;15:26:49;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0093;2026-10-13;15:28:13;Tarde;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0094;2026-10-13;16:10:25;Tarde;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0095;2026-10-13;16:32:41;Tarde;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0096;2026-10-13;16:32:50;Tarde;Bebidas;Agua 1 litro;4;1,00;4,00
+V0097;2026-10-13;17:03:59;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0098;2026-10-13;17:23:51;Tarde;Bebidas;Agua 1 litro;1;1,00;1,00
+V0099;2026-10-13;17:58:35;Tarde;Snacks y dulces;Chocolatina;3;1,20;3,60
+V0100;2026-10-13;18:46:48;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0101;2026-10-13;18:51:56;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0102;2026-10-13;19:14:40;Noche;Hogar;Detergente 1 litro;2;6,90;13,80
+V0103;2026-10-13;19:27:43;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0104;2026-10-13;19:48:55;Noche;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0105;2026-10-13;19:52:05;Noche;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0106;2026-10-13;19:54:19;Noche;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0107;2026-10-13;20:16:44;Noche;Hogar;Detergente 1 litro;1;6,90;6,90
+V0108;2026-10-13;20:18:44;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0109;2026-10-13;20:49:11;Noche;Hogar;Detergente 1 litro;1;6,90;6,90
+V0110;2026-10-13;21:22:56;Noche;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0111;2026-10-13;21:29:13;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0112;2026-10-13;22:13:33;Noche;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0113;2026-10-13;22:14:28;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0114;2026-10-13;22:26:31;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0115;2026-10-13;22:34:43;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0116;2026-10-13;22:57:08;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0117;2026-10-13;23:10:19;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0118;2026-10-13;23:29:34;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0119;2026-10-13;23:44:03;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0120;2026-10-13;23:50:58;Noche;Hogar;Papel higiénico 4 rollos;2;3,50;7,00
+V0121;2026-10-14;00:04:25;Madrugada;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0122;2026-10-14;01:59:43;Madrugada;Hogar;Pilas AA 4 unidades;1;4,90;4,90
+V0123;2026-10-14;02:11:14;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0124;2026-10-14;04:16:22;Madrugada;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0125;2026-10-14;04:17:35;Madrugada;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0126;2026-10-14;05:14:49;Madrugada;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0127;2026-10-14;06:48:06;Mañana;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0128;2026-10-14;06:53:19;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0129;2026-10-14;07:12:46;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0130;2026-10-14;07:14:35;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0131;2026-10-14;07:57:37;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0132;2026-10-14;08:02:10;Mañana;Snacks y dulces;Papas fritas 150 g;2;1,80;3,60
+V0133;2026-10-14;08:08:30;Mañana;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0134;2026-10-14;08:18:22;Mañana;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0135;2026-10-14;08:21:55;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0136;2026-10-14;09:00:05;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0137;2026-10-14;09:04:14;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0138;2026-10-14;09:25:02;Mañana;Bebidas;Agua 1 litro;3;1,00;3,00
+V0139;2026-10-14;09:39:44;Mañana;Bebidas;Bebida energética 500 ml;2;2,50;5,00
+V0140;2026-10-14;10:25:33;Mañana;Comida preparada;Sándwich preparado;2;2,90;5,80
+V0141;2026-10-14;11:06:05;Mañana;Comida preparada;Bocadillo preparado;3;3,50;10,50
+V0142;2026-10-14;11:45:20;Mañana;Bebidas;Agua 1 litro;3;1,00;3,00
+V0143;2026-10-14;12:09:10;Tarde;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0144;2026-10-14;12:33:27;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0145;2026-10-14;12:37:16;Tarde;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0146;2026-10-14;12:43:07;Tarde;Comida preparada;Pizza refrigerada;3;6,50;19,50
+V0147;2026-10-14;12:44:28;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0148;2026-10-14;13:07:06;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0149;2026-10-14;13:41:43;Tarde;Bebidas;Agua 1 litro;1;1,00;1,00
+V0150;2026-10-14;14:13:40;Tarde;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0151;2026-10-14;14:21:26;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0152;2026-10-14;14:37:08;Tarde;Hogar;Detergente 1 litro;1;6,90;6,90
+V0153;2026-10-14;14:55:38;Tarde;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0154;2026-10-14;15:08:57;Tarde;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0155;2026-10-14;15:18:11;Tarde;Hogar;Papel higiénico 4 rollos;2;3,50;7,00
+V0156;2026-10-14;15:56:59;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0157;2026-10-14;16:50:44;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0158;2026-10-14;17:46:05;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0159;2026-10-14;17:59:44;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0160;2026-10-14;18:09:00;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0161;2026-10-14;18:10:38;Noche;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0162;2026-10-14;19:19:53;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0163;2026-10-14;19:36:38;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0164;2026-10-14;19:51:47;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0165;2026-10-14;20:01:56;Noche;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0166;2026-10-14;20:13:47;Noche;Higiene personal;Pasta de dientes;1;2,80;2,80
+V0167;2026-10-14;20:17:58;Noche;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0168;2026-10-14;20:20:04;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0169;2026-10-14;20:57:33;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0170;2026-10-14;21:00:19;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0171;2026-10-14;21:03:19;Noche;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0172;2026-10-14;21:48:05;Noche;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0173;2026-10-14;22:26:37;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0174;2026-10-14;22:41:41;Noche;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0175;2026-10-14;22:45:57;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0176;2026-10-14;23:21:32;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0177;2026-10-14;23:29:05;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0178;2026-10-14;23:42:12;Noche;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0179;2026-10-14;23:45:59;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0180;2026-10-14;23:48:35;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0181;2026-10-15;01:24:35;Madrugada;Alimentación básica;Pan de molde;1;1,80;1,80
+V0182;2026-10-15;02:44:35;Madrugada;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0183;2026-10-15;03:37:13;Madrugada;Comida preparada;Sándwich preparado;2;2,90;5,80
+V0184;2026-10-15;04:06:29;Madrugada;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0185;2026-10-15;04:59:23;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0186;2026-10-15;05:32:30;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0187;2026-10-15;06:20:08;Mañana;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0188;2026-10-15;06:24:44;Mañana;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0189;2026-10-15;06:35:45;Mañana;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0190;2026-10-15;06:59:59;Mañana;Hogar;Papel higiénico 4 rollos;3;3,50;10,50
+V0191;2026-10-15;07:20:45;Mañana;Bebidas;Agua 1 litro;1;1,00;1,00
+V0192;2026-10-15;07:25:13;Mañana;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0193;2026-10-15;07:29:34;Mañana;Bebidas;Refresco 330 ml;2;1,40;2,80
+V0194;2026-10-15;07:37:33;Mañana;Bebidas;Agua 1 litro;1;1,00;1,00
+V0195;2026-10-15;07:44:40;Mañana;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0196;2026-10-15;07:52:27;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0197;2026-10-15;08:00:10;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0198;2026-10-15;08:42:45;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0199;2026-10-15;09:49:03;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0200;2026-10-15;10:12:14;Mañana;Hogar;Detergente 1 litro;1;6,90;6,90
+V0201;2026-10-15;10:38:27;Mañana;Snacks y dulces;Papas fritas 150 g;2;1,80;3,60
+V0202;2026-10-15;11:45:17;Mañana;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0203;2026-10-15;12:11:09;Tarde;Snacks y dulces;Papas fritas 150 g;2;1,80;3,60
+V0204;2026-10-15;12:11:55;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0205;2026-10-15;12:38:16;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0206;2026-10-15;12:59:21;Tarde;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0207;2026-10-15;13:00:49;Tarde;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0208;2026-10-15;13:07:48;Tarde;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0209;2026-10-15;13:07:59;Tarde;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0210;2026-10-15;13:39:42;Tarde;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0211;2026-10-15;14:15:14;Tarde;Higiene personal;Gel de ducha 500 ml;2;3,80;7,60
+V0212;2026-10-15;14:53:08;Tarde;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0213;2026-10-15;15:44:54;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0214;2026-10-15;15:57:51;Tarde;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0215;2026-10-15;16:42:36;Tarde;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0216;2026-10-15;16:43:47;Tarde;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0217;2026-10-15;16:44:58;Tarde;Bebidas;Agua 1 litro;1;1,00;1,00
+V0218;2026-10-15;16:45:11;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0219;2026-10-15;17:47:40;Tarde;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0220;2026-10-15;18:15:38;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0221;2026-10-15;19:19:52;Noche;Bebidas;Bebida energética 500 ml;2;2,50;5,00
+V0222;2026-10-15;19:23:28;Noche;Hogar;Detergente 1 litro;1;6,90;6,90
+V0223;2026-10-15;19:31:27;Noche;Comida preparada;Pizza refrigerada;3;6,50;19,50
+V0224;2026-10-15;19:31:28;Noche;Snacks y dulces;Chocolatina;3;1,20;3,60
+V0225;2026-10-15;19:37:05;Noche;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0226;2026-10-15;19:44:52;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0227;2026-10-15;19:59:05;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0228;2026-10-15;20:03:43;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0229;2026-10-15;20:11:54;Noche;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0230;2026-10-15;20:56:08;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0231;2026-10-15;21:35:55;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0232;2026-10-15;21:43:36;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0233;2026-10-15;21:51:24;Noche;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0234;2026-10-15;22:32:47;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0235;2026-10-15;22:55:20;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0236;2026-10-15;23:02:58;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0237;2026-10-15;23:12:20;Noche;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0238;2026-10-15;23:36:13;Noche;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0239;2026-10-15;23:49:50;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0240;2026-10-15;23:59:50;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0241;2026-10-16;00:27:53;Madrugada;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0242;2026-10-16;00:38:07;Madrugada;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0243;2026-10-16;00:52:34;Madrugada;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0244;2026-10-16;02:03:03;Madrugada;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0245;2026-10-16;02:20:00;Madrugada;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0246;2026-10-16;03:49:25;Madrugada;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0247;2026-10-16;04:15:42;Madrugada;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0248;2026-10-16;04:19:46;Madrugada;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0249;2026-10-16;04:56:15;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0250;2026-10-16;06:22:39;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0251;2026-10-16;06:29:00;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0252;2026-10-16;06:33:53;Mañana;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0253;2026-10-16;06:42:17;Mañana;Snacks y dulces;Papas fritas 150 g;3;1,80;5,40
+V0254;2026-10-16;07:43:45;Mañana;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0255;2026-10-16;07:45:38;Mañana;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0256;2026-10-16;08:50:10;Mañana;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0257;2026-10-16;09:01:00;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0258;2026-10-16;10:58:26;Mañana;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0259;2026-10-16;11:34:11;Mañana;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0260;2026-10-16;11:39:38;Mañana;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0261;2026-10-16;11:49:44;Mañana;Higiene personal;Gel de ducha 500 ml;3;3,80;11,40
+V0262;2026-10-16;11:54:37;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0263;2026-10-16;12:14:04;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0264;2026-10-16;12:31:01;Tarde;Hogar;Detergente 1 litro;1;6,90;6,90
+V0265;2026-10-16;12:44:14;Tarde;Bebidas;Agua 1 litro;2;1,00;2,00
+V0266;2026-10-16;13:46:19;Tarde;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0267;2026-10-16;13:51:02;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0268;2026-10-16;13:57:46;Tarde;Alimentación básica;Pan de molde;3;1,80;5,40
+V0269;2026-10-16;14:02:34;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0270;2026-10-16;14:23:33;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0271;2026-10-16;14:48:08;Tarde;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0272;2026-10-16;15:00:12;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0273;2026-10-16;15:10:12;Tarde;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0274;2026-10-16;15:22:01;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0275;2026-10-16;15:23:51;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0276;2026-10-16;16:17:08;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0277;2026-10-16;16:53:54;Tarde;Alimentación básica;Leche 1 litro;3;1,30;3,90
+V0278;2026-10-16;17:38:49;Tarde;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0279;2026-10-16;18:02:31;Noche;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0280;2026-10-16;18:13:54;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0281;2026-10-16;18:54:21;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0282;2026-10-16;19:17:09;Noche;Higiene personal;Toallitas de bolsillo;3;1,60;4,80
+V0283;2026-10-16;19:52:34;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0284;2026-10-16;20:00:37;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0285;2026-10-16;20:03:07;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0286;2026-10-16;20:18:47;Noche;Bebidas;Agua 1 litro;1;1,00;1,00
+V0287;2026-10-16;20:21:02;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0288;2026-10-16;21:04:08;Noche;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0289;2026-10-16;21:27:12;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0290;2026-10-16;21:39:00;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0291;2026-10-16;21:48:06;Noche;Bebidas;Refresco 330 ml;3;1,40;4,20
+V0292;2026-10-16;22:04:11;Noche;Bebidas;Agua 1 litro;4;1,00;4,00
+V0293;2026-10-16;22:20:39;Noche;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0294;2026-10-16;22:33:36;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0295;2026-10-16;22:36:55;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0296;2026-10-16;22:59:31;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0297;2026-10-16;23:06:18;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0298;2026-10-16;23:16:20;Noche;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0299;2026-10-16;23:19:52;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0300;2026-10-16;23:31:22;Noche;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0301;2026-10-17;01:45:12;Madrugada;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0302;2026-10-17;02:24:46;Madrugada;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0303;2026-10-17;02:25:41;Madrugada;Hogar;Detergente 1 litro;1;6,90;6,90
+V0304;2026-10-17;02:44:08;Madrugada;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0305;2026-10-17;03:41:26;Madrugada;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0306;2026-10-17;04:23:51;Madrugada;Hogar;Pilas AA 4 unidades;3;4,90;14,70
+V0307;2026-10-17;04:39:49;Madrugada;Hogar;Papel higiénico 4 rollos;3;3,50;10,50
+V0308;2026-10-17;04:42:19;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0309;2026-10-17;05:26:19;Madrugada;Comida preparada;Sándwich preparado;2;2,90;5,80
+V0310;2026-10-17;05:26:45;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0311;2026-10-17;06:01:39;Mañana;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0312;2026-10-17;06:20:51;Mañana;Alimentación básica;Pan de molde;1;1,80;1,80
+V0313;2026-10-17;07:39:06;Mañana;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0314;2026-10-17;07:51:36;Mañana;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0315;2026-10-17;08:11:37;Mañana;Alimentación básica;Pan de molde;1;1,80;1,80
+V0316;2026-10-17;08:57:42;Mañana;Bebidas;Agua 1 litro;1;1,00;1,00
+V0317;2026-10-17;09:03:12;Mañana;Snacks y dulces;Papas fritas 150 g;2;1,80;3,60
+V0318;2026-10-17;09:38:40;Mañana;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0319;2026-10-17;09:52:32;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0320;2026-10-17;10:41:25;Mañana;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0321;2026-10-17;10:45:30;Mañana;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0322;2026-10-17;11:23:41;Mañana;Bebidas;Refresco 330 ml;3;1,40;4,20
+V0323;2026-10-17;12:05:05;Tarde;Snacks y dulces;Chocolatina;1;1,20;1,20
+V0324;2026-10-17;12:16:05;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0325;2026-10-17;12:24:57;Tarde;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0326;2026-10-17;12:26:11;Tarde;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0327;2026-10-17;12:37:32;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0328;2026-10-17;13:05:36;Tarde;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0329;2026-10-17;13:51:01;Tarde;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0330;2026-10-17;13:56:12;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0331;2026-10-17;14:27:21;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0332;2026-10-17;15:00:46;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0333;2026-10-17;15:26:27;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0334;2026-10-17;15:37:28;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0335;2026-10-17;15:58:09;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0336;2026-10-17;17:00:29;Tarde;Alimentación básica;Leche 1 litro;2;1,30;2,60
+V0337;2026-10-17;17:11:27;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0338;2026-10-17;17:16:59;Tarde;Snacks y dulces;Papas fritas 150 g;1;1,80;1,80
+V0339;2026-10-17;17:25:22;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0340;2026-10-17;18:28:43;Noche;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0341;2026-10-17;18:29:41;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0342;2026-10-17;19:01:06;Noche;Comida preparada;Bocadillo preparado;2;3,50;7,00
+V0343;2026-10-17;19:18:10;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0344;2026-10-17;19:26:00;Noche;Comida preparada;Bocadillo preparado;3;3,50;10,50
+V0345;2026-10-17;19:37:05;Noche;Alimentación básica;Arroz 1 kg;1;1,90;1,90
+V0346;2026-10-17;19:43:37;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0347;2026-10-17;19:47:03;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0348;2026-10-17;19:53:30;Noche;Snacks y dulces;Frutos secos 100 g;2;2,40;4,80
+V0349;2026-10-17;19:55:31;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0350;2026-10-17;20:43:10;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0351;2026-10-17;20:44:01;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0352;2026-10-17;20:44:09;Noche;Alimentación básica;Pan de molde;1;1,80;1,80
+V0353;2026-10-17;21:07:31;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0354;2026-10-17;22:13:32;Noche;Bebidas;Agua 1 litro;1;1,00;1,00
+V0355;2026-10-17;22:21:46;Noche;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0356;2026-10-17;22:43:45;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0357;2026-10-17;23:19:38;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0358;2026-10-17;23:20:05;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0359;2026-10-17;23:38:39;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0360;2026-10-17;23:52:00;Noche;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0361;2026-10-18;01:02:02;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0362;2026-10-18;01:12:33;Madrugada;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0363;2026-10-18;02:38:22;Madrugada;Hogar;Pilas AA 4 unidades;1;4,90;4,90
+V0364;2026-10-18;03:09:27;Madrugada;Bebidas;Agua 1 litro;2;1,00;2,00
+V0365;2026-10-18;05:09:34;Madrugada;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0366;2026-10-18;05:17:23;Madrugada;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0367;2026-10-18;05:22:20;Madrugada;Bebidas;Agua 1 litro;3;1,00;3,00
+V0368;2026-10-18;05:57:55;Madrugada;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0369;2026-10-18;06:25:38;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0370;2026-10-18;06:43:45;Mañana;Snacks y dulces;Papas fritas 150 g;2;1,80;3,60
+V0371;2026-10-18;07:01:43;Mañana;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0372;2026-10-18;07:18:04;Mañana;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0373;2026-10-18;07:24:25;Mañana;Higiene personal;Toallitas de bolsillo;2;1,60;3,20
+V0374;2026-10-18;07:36:06;Mañana;Alimentación básica;Arroz 1 kg;2;1,90;3,80
+V0375;2026-10-18;07:42:06;Mañana;Alimentación básica;Pan de molde;1;1,80;1,80
+V0376;2026-10-18;09:11:59;Mañana;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0377;2026-10-18;09:18:31;Mañana;Alimentación básica;Pan de molde;1;1,80;1,80
+V0378;2026-10-18;09:23:01;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0379;2026-10-18;10:03:01;Mañana;Comida preparada;Sándwich preparado;1;2,90;2,90
+V0380;2026-10-18;10:14:12;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0381;2026-10-18;10:24:02;Mañana;Bebidas;Agua 1 litro;2;1,00;2,00
+V0382;2026-10-18;11:09:08;Mañana;Hogar;Detergente 1 litro;2;6,90;13,80
+V0383;2026-10-18;11:25:54;Mañana;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0384;2026-10-18;12:12:23;Tarde;Higiene personal;Pasta de dientes;1;2,80;2,80
+V0385;2026-10-18;12:30:44;Tarde;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0386;2026-10-18;12:34:45;Tarde;Bebidas;Agua 1 litro;3;1,00;3,00
+V0387;2026-10-18;12:52:56;Tarde;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0388;2026-10-18;12:59:25;Tarde;Hogar;Papel higiénico 4 rollos;1;3,50;3,50
+V0389;2026-10-18;13:04:32;Tarde;Snacks y dulces;Chocolatina;3;1,20;3,60
+V0390;2026-10-18;13:26:06;Tarde;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0391;2026-10-18;13:45:53;Tarde;Higiene personal;Pasta de dientes;1;2,80;2,80
+V0392;2026-10-18;14:27:51;Tarde;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0393;2026-10-18;15:16:19;Tarde;Bebidas;Agua 1 litro;4;1,00;4,00
+V0394;2026-10-18;15:59:40;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0395;2026-10-18;16:23:49;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0396;2026-10-18;16:56:17;Tarde;Snacks y dulces;Chocolatina;2;1,20;2,40
+V0397;2026-10-18;17:24:53;Tarde;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0398;2026-10-18;17:26:05;Tarde;Hogar;Pilas AA 4 unidades;1;4,90;4,90
+V0399;2026-10-18;17:54:01;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0400;2026-10-18;17:57:05;Tarde;Alimentación básica;Pan de molde;1;1,80;1,80
+V0401;2026-10-18;18:08:48;Noche;Bebidas;Agua 1 litro;4;1,00;4,00
+V0402;2026-10-18;18:15:08;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0403;2026-10-18;18:46:26;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0404;2026-10-18;19:35:39;Noche;Alimentación básica;Leche 1 litro;1;1,30;1,30
+V0405;2026-10-18;19:43:51;Noche;Bebidas;Bebida energética 500 ml;1;2,50;2,50
+V0406;2026-10-18;19:44:04;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0407;2026-10-18;21:07:33;Noche;Snacks y dulces;Frutos secos 100 g;1;2,40;2,40
+V0408;2026-10-18;21:10:49;Noche;Higiene personal;Toallitas de bolsillo;1;1,60;1,60
+V0409;2026-10-18;21:13:38;Noche;Higiene personal;Gel de ducha 500 ml;1;3,80;3,80
+V0410;2026-10-18;21:26:55;Noche;Alimentación básica;Arroz 1 kg;3;1,90;5,70
+V0411;2026-10-18;21:28:15;Noche;Bebidas;Agua 1 litro;2;1,00;2,00
+V0412;2026-10-18;21:31:01;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0413;2026-10-18;21:34:51;Noche;Comida preparada;Sándwich preparado;3;2,90;8,70
+V0414;2026-10-18;21:50:09;Noche;Higiene personal;Gel de ducha 500 ml;2;3,80;7,60
+V0415;2026-10-18;21:53:05;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0416;2026-10-18;21:59:53;Noche;Comida preparada;Bocadillo preparado;1;3,50;3,50
+V0417;2026-10-18;22:40:45;Noche;Comida preparada;Pizza refrigerada;1;6,50;6,50
+V0418;2026-10-18;23:10:53;Noche;Bebidas;Agua 1 litro;3;1,00;3,00
+V0419;2026-10-18;23:13:38;Noche;Bebidas;Refresco 330 ml;1;1,40;1,40
+V0420;2026-10-18;23:39:43;Noche;Snacks y dulces;Chocolatina;2;1,20;2,40
