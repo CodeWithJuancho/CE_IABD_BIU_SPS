@@ -53,11 +53,29 @@ sudo docker run hello-world
 sudo docker run -d -p 5432:5432 --name proyecto0 -e POSTGRES_PASSWORD=1234 postgres
 ```
 
-4. Access to the db
+### Star container
+Container needs to be started if it is stopped after creating it
+```
+sudo docker start proyecto0
+```
+
+
+4. Stop container
+```
+docker stop proyecto0
+```
+
+5. Access Database
 ```
 sudo docker exec -it proyecto0 bash
 psql -U postgres -d postgres
 ```
+
+6. PostgreSQL
+
+- List databases: `\l`
+- Switch database: `\c postgres`
+- List tables: `\dt`
 
 ### SQL query
 ```
@@ -74,6 +92,3 @@ CREATE TABLE users(
     state VARCHAR(50)
 );
 ```
-
-5. Stop container
-```docker stop proyecto0``
