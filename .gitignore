@@ -3,5 +3,6 @@
 **/resolucion/
 **/not_yet/
 
+*.~lock*
 
 
