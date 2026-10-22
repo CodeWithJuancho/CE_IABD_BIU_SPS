@@ -51,3 +51,18 @@ Git command for applying the changes introduced by some existing commits
     git cherry-pick [--edit] [-m parent-number]
 
 ### Rename, [see](https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/)
+
+
+### Reset last pushed commit
+
+Go to previous commit
+    
+    git reset --hard HEAD~1
+
+Force push
+    
+    git push -f 
+
+### Pull from origin when your HEAD has diverged 
+    
+    git pull --no-rebase origin {branch_name}
