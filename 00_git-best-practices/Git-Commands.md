@@ -62,3 +62,7 @@ Go to previous commit
 Force push
     
     git push -f 
+
+### Pull from origin when your HEAD has diverged 
+    
+    git pull --no-rebase origin {branch_name}
