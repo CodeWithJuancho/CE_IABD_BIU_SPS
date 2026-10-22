@@ -5,7 +5,7 @@ Puedes consultar apuntes o Internet. Ejecuta los bloques cuando estén completos
 
 # %% 1. Bibliotecas y datos de partida.
 # Biblioteca para trabajar con vectores.
-import numpy as np
+# import numpy as np
 # Interfaz gráfica de Matplotlib.
 import matplotlib.pyplot as plt
 
