@@ -48,7 +48,6 @@ def database_init_connection():
         cursor.execute(table_users_exists)
         exists = cursor.fetchone()[0] # Boolean field
 
-        print(f"LO DE LA TABLA ES: {exists}")
         if not exists:
             create_table_users = """
             CREATE TABLE users(
@@ -80,6 +79,7 @@ def database_insertion_query(db_connection, users):
     cursor = db_connection.cursor()
     users_tuples = [(user.name, user.surname, user.email, user.genre, user.birth, user.phone, user.country, user.city, user.state) for user in users]
     cursor.executemany(insert_users, users_tuples)
+    db_connection.commit()
 
 date = datetime.now().strftime("%m_%d_%y")
 
