@@ -64,6 +64,8 @@ def database_init_connection():
             );
             """
             cursor.execute(create_table_users)
+            connection.commit()
+            cursor.close()
 
         return connection
 
@@ -79,6 +81,7 @@ def database_insertion_query(db_connection, users):
     cursor = db_connection.cursor()
     users_tuples = [(user.name, user.surname, user.email, user.genre, user.birth, user.phone, user.country, user.city, user.state) for user in users]
     cursor.executemany(insert_users, users_tuples)
+    cursor.close()
     db_connection.commit()
 
 date = datetime.now().strftime("%m_%d_%y")
@@ -109,6 +112,7 @@ if Path(users_file_path).exists():
     if (db_connection):
         database_insertion_query(db_connection, users)
         imported_users = len(users)
+        db_connection.close()
         
     imported_logs_file_path = logs_folder_path + "/" + date + "_imported_rows.txt"
     with open(imported_logs_file_path, "w") as imported_logs:

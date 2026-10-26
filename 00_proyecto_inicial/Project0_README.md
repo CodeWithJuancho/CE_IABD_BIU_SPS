@@ -62,7 +62,7 @@ sudo docker start proyecto0
 
 4. Stop container
 ```
-docker stop proyecto0
+sudo docker stop proyecto0
 ```
 
 5. Access Database
