@@ -4,34 +4,53 @@ Puedes consultar apuntes o Internet. Ejecuta los bloques cuando estén completos
 """
 
 # %% 1. Bibliotecas y datos de partida.
-# Biblioteca para trabajar con vectores.
-# Interfaz gráfica de Matplotlib.
+import numpy as np  # Biblioteca para trabajar con vectores.
+import matplotlib.pyplot as plt  # Interfaz gráfica de Matplotlib.
 
 m = 20
-n = ...  # Tamaños desde 0 hasta m-1. Pista: arange.
-y = ...  # Vector de ceros del mismo tamaño. Pista: zeros y len.
+n = np.arange(m)  # Tamaños desde 0 hasta m-1. Pista: arange.
+y = np.zeros(len(n))  # Vector de ceros del mismo tamaño. Pista: zeros y len.
 
 # %% 2. Calcular el polinomio.
 # Escribe un bucle que guarde el cuadrado de cada tamaño en y y lo imprima.
-...
+for i in n:
+    y[i] = i**2
+    print(i, y[i])
 
 # %% 3. Gráfico del polinomio con escala lineal.
 # Crea una figura, dibuja n frente a y, añade título y muestra el gráfico.
 # Pista: figure, plot, title, show.
-...
+plt.figure()
+plt.plot(n, y)
+plt.title("Polinomio n^2 (escala lineal)")
+plt.show()
 
 # %% 4. Gráfico del polinomio con escala vertical logarítmica.
 # Dibuja los mismos datos en otra figura y cambia solo el eje vertical.
 # Pista: yscale. El cero no se puede representar en esa escala.
-...
+plt.figure()
+plt.plot(n, y)
+plt.yscale("log")
+plt.title("Polinomio n^2 (escala logarítmica)")
+plt.show()
 
 # %% 5. Calcular la exponencial.
 # Reinicia y y escribe el bucle para calcular e imprimir 2 elevado a cada tamaño.
-...
+y = np.zeros(len(n))
+for i in n:
+    y[i] = 2**i
+    print(i, y[i])
 
 # %% 6. Gráfico de la exponencial.
 # Crea otra figura y representa n frente a y con el eje vertical logarítmico.
-...
+plt.figure()
+plt.plot(n, y)
+plt.yscale("log")
+plt.title("Exponencial 2^n (escala logarítmica)")
+plt.show()
 
 # Responde con comentarios:
 # ¿Qué función crece más deprisa? ¿Qué observas en las gráficas logarítmicas?
+# La exponencial 2^n crece mucho más deprisa: con n=19, n^2 = 361 y 2^n = 524288.
+# En escala logarítmica la exponencial es una recta (log(2^n) = n*log 2), mientras
+# que n^2 da una curva que se va aplanando (log(n^2) = 2*log n crece cada vez menos).
