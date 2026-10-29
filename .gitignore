@@ -3,7 +3,12 @@
 **/resolucion/
 **/not_yet/
 .DS_Store
+**/resolución/
 
+<<<<<<< HEAD
 *.~lock*
 
 
+=======
+.Rproj.user
+>>>>>>> b184000434c4d2bbeda075465f6bf8d70192ebea
